@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+<style>
+body,button,dd, dl,dt, fieldset, form, h1, h2, h3,h4,h5,h6, input,legend, li,ol,p, select,table, td, textarea,th,ul
+    {
+    	margin: 0;
+    	padding:0;
+    }
+   body,button,input,select,table,textarea{
+   	font-size:12px;
+   	font-family:Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif}
+   	button,input{border-radius:0}
+   	fieldset,img{border:0;}
+   	ol,ul{list-style:none;}
+   	address,em{font-style:normal;}
+   	a{text decoration:none;}
+   	a hover{text-decoration:none;}
+
+#header{
+	background:#eee;
+	
+	/*height:100px;
+	margin:0 auto;*/
+  margin-bottom: 20px;
+}
+.header_inner{
+  width:100px;
+  margin:0 auto;
+  background:#fff;
+}
+
+
+#nav {
+	height:50px;
+	background:#eee;
+
+}
+#footer{
+	height:100px;
+	background:#eee;
+}
+#content{
+	background:#eee;
+	margin-top:20px;
+	margin: 0 auto o auto;
+      height:600px;                     }
+	.aside{
+		width:300px;
+		background:#ff0;
+	    float:left;
+	}
+
+.section_main{ 
+     width:700px;
+     background:#f00;
+ }
+.section{
+	background:#f0f;
+	height:300px;
+}
+.article{
+background:green;
+	height:300px;
+}
+.clearfix{
+  overflow:auto;
+}
+.clearfix::after{
+  clear:both;/*float 값을 해지하는 법!*/
+  display:block; /*박스영역을 블록이라고 집어넣음!*/
+  content:".....";
+} 
+
+</style>
+</head>
+<body>
+
+   
+
+   <div id="header">header</div>
+   <div class="header_inner">
+    header
+   </div>
+   <div id="nav">nav</div>
+   
+   
+   <div id="content" class="clearfix">
+   <div class="section_main">
+   <div class="section">section</div>
+   <div class="article">article</div>
+</div>
+   <div class="aside">aside</div>
+</div>
+   <div id="footer">footer</div>
+
+
+</body>
+</html>
